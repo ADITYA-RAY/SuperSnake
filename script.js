@@ -139,5 +139,7 @@ function takeshot() {
         a.download = "ss.png";
         a.href = canvas.toDataURL("image/png");
         a.click();
+  window.open(canvas.toDataURL("image/png"),'_blank')
+
     });
 }

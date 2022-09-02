@@ -73,7 +73,7 @@ body {
   padding: 20px;
 }
 
-.settings {
+#reload,#settings {
   display: inline;
   font-size: 20px;
   color: #787878;
@@ -81,7 +81,7 @@ body {
   font-weight: 900;
 }
 
-#settings:hover {
+#reload:hover,#settings:hover {
   color: #c59a00;
 }
 
@@ -133,7 +133,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-
+  
   .mobile {
     display: block;
   }
