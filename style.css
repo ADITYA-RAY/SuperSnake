@@ -73,7 +73,7 @@ body {
   padding: 20px;
 }
 
-#settings {
+.settings {
   display: inline;
   font-size: 20px;
   color: #787878;
@@ -133,7 +133,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  
+
   .mobile {
     display: block;
   }
