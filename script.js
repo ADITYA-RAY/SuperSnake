@@ -15,9 +15,12 @@ if (window.innerWidth < 767) {
     box.style.width = width + "px"
     height = 360;
     box.style.height = "360px"
-    speed=140;
-    
+    speed=120;
+}else{
+    box.style.width= width +"px"
+    box.style.height= height +"px"
 }
+
 var move = setInterval(movement, speed)
 
 // document.getElementById("up").onclick=keydown
