@@ -1,4 +1,3 @@
-var move = setInterval(movement, 100)
 var snake = document.getElementById("move");
 var fruit = document.getElementById("fruit")
 var box = document.getElementById("box")
@@ -9,13 +8,18 @@ var memmory = []
 var timer = 0;
 var score = 0;
 var blockWidth = 24;
-var width = Math.min(Math.ceil(window.innerWidth / blockWidth) * blockWidth - 24, 960);
+var width = Math.min(Math.ceil(window.innerWidth / blockWidth) * blockWidth - 48, 960);
 var height = Math.min(Math.ceil(window.innerHeight / blockWidth) * blockWidth, 480);
+var speed=100;
 if (window.innerWidth < 767) {
     box.style.width = width + "px"
     height = 360;
     box.style.height = "360px"
+    speed=140;
+    
 }
+var move = setInterval(movement, speed)
+
 // document.getElementById("up").onclick=keydown
 document.body.addEventListener('keydown', function (event) {
     const key = event.key;

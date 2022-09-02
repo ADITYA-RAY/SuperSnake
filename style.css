@@ -112,7 +112,7 @@ text-decoration-line: underline;
   width: 100%;
   text-align: center;
   color: #c59a00;
-  font-size: 40px;
+  font-size: 50px;
   display: none;
 }
 .bottom{
@@ -121,7 +121,7 @@ text-decoration-line: underline;
   justify-content: center;
 }
 .bottom i{
-  padding: 10px;
+  padding: 12px;
 }
 @media screen and (max-width:767px){
   .mobile{
@@ -129,7 +129,7 @@ text-decoration-line: underline;
   }
   .box {
     margin: 0vh auto;
-    top: 65%;
+    top: 60%;
     left: 50%;
     -ms-transform: translate(-50%, -0%);
     transform: translate(-50%, -100%);
