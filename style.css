@@ -1,0 +1,91 @@
+body {
+  margin: 0 auto;
+  background: #323437;
+  overflow: hidden;
+  max-width: 1600px;
+}
+.box {
+  position: fixed;
+  border: 1px solid #64666980;
+  margin: 0vh auto;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, #64666980 1px, transparent 1px),
+    linear-gradient(to bottom, #64666980 1px, transparent 1px);
+  /* overflow: hidden; */
+}
+
+.snake {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: radial-gradient(#e2b714, #c59a00);
+  box-shadow: 0px 0px 4px 2px #c59a009e;
+}
+
+.fruit {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: radial-gradient(#008cff, #005aa4);
+  box-shadow: 0px 0px 4px 2px #005aa461;
+}
+
+#score {
+  position: fixed;
+  top: 20px;
+  right: 100px;
+  width: fit-content;
+  height: 50px;
+  color: #d1d0c5;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Lexend Deca Regular";
+}
+
+@font-face {
+  font-family: "Lexend Deca Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lexend Deca Regular"),
+    url("LexendDecaRegular.woff") format("woff");
+}
+
+.title {
+  font-family: Lexend Deca Regular;
+  font-size: 40px;
+  color: #d1d0c5;
+  padding: 20px;
+}
+
+#settings {
+  display: inline;
+  font-size: 30px;
+  color: #787878;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+#settings:hover {
+  color: #c59a00;
+}
+
+@keyframes blink {
+  from {
+    background: radial-gradient(#e2b714, #c59a00);
+    box-shadow: 0px 0px 4px 2px #c59a009e;
+  }
+  to {
+    background: radial-gradient(#e26a14, #c58300);
+    box-shadow: 0px 0px 4px 2px #c58300;
+  }
+}
