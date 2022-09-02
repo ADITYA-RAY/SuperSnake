@@ -8,23 +8,25 @@
     <link rel="stylesheet" href="style.css" />
     <title>SUPER SNAKE</title>
   </head>
-  <body>
+  <body >
     <div class="title">
       &#128013; supersnake
-      <!-- <div id="settings" onclick="settings()">&#9881;</div> -->
-      <!-- <div id="settings" onclick="restart()">&#8634;</div> -->
+      <div id="settings" onclick="restart()"><i class="fa fa-refresh" aria-hidden="true"></i></div>
+      <div id="settings" onclick="takeshot()"><i class="fa fa-picture-o"></i></div>
     </div>
+
     <div id="score">score : 0</div>
+    
     <div class="box" id="box">
       <div class="snake" id="move"></div>
       <div class="fruit" id="fruit"></div>
     </div>
+
     <div class="credits">
       made with &#129505; by  <span style="color: #c59a00b9;"><a target="_blank" href="https://aditya-ray.github.io/ADITYA-RAY/">Aditya Ray</a></span> 
-      <div class="social">
-
-      </div>
     </div>
+
+    <!-- control for smaller devices -->
     <div class="mobile">
       <div class="top"><i class="fa fa-arrow-circle-up" onclick="handleKey('up')"></i></div>
       <div class="bottom">
@@ -33,6 +35,8 @@
         <div class="right"><i class="fa fa-arrow-circle-right" onclick="handleKey('right')"></i></div>
       </div>
     </div>
+
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
   </body>
 </html>

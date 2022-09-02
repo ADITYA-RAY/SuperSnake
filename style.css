@@ -1,9 +1,25 @@
+@font-face {
+  font-family: "Lexend Deca Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lexend Deca Regular"),
+    url("LexendDecaRegular.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0 auto;
   background: #323437;
   overflow: hidden;
+  width: 100%;
+  height: 100vh;
   max-width: 1600px;
+  font-family: "Lexend Deca Regular";
 }
+
 .box {
   position: fixed;
   border: 1px solid #64666980;
@@ -49,20 +65,9 @@ body {
   color: #d1d0c5;
   font-size: 24px;
   text-align: center;
-  font-family: "Lexend Deca Regular";
-}
-
-@font-face {
-  font-family: "Lexend Deca Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Lexend Deca Regular"),
-    url("LexendDecaRegular.woff") format("woff");
 }
 
 .title {
-  
-  font-family: Lexend Deca Regular;
   font-size: 28px;
   color: #d1d0c5;
   padding: 20px;
@@ -70,7 +75,7 @@ body {
 
 #settings {
   display: inline;
-  font-size: 30px;
+  font-size: 20px;
   color: #787878;
   cursor: pointer;
   font-weight: 900;
@@ -91,8 +96,7 @@ body {
   }
 }
 
-.credits{
-  font-family: "Lexend Deca Regular";
+.credits {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -101,12 +105,14 @@ body {
   text-align: center;
   padding: 10px;
 }
-.credits a{
-text-decoration: none;
-color: #c59a00b9;
-text-decoration-line: underline;
+
+.credits a {
+  text-decoration: none;
+  color: #c59a00b9;
+  text-decoration-line: underline;
 }
-.mobile{
+
+.mobile {
   position: fixed;
   bottom: 50px;
   width: 100%;
@@ -115,39 +121,38 @@ text-decoration-line: underline;
   font-size: 60px;
   display: none;
 }
-.bottom{
+
+.bottom {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.bottom i{
+
+.bottom i {
   padding: 15px;
 }
-@media screen and (max-width:767px){
-  .mobile{
+
+@media screen and (max-width: 767px) {
+  
+  .mobile {
     display: block;
   }
+
   .box {
-    margin: 0vh auto;
     top: 55%;
     left: 50%;
     -ms-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
 
-.title {
-  font-size: 22px;
-  padding: 20px;
-}
+  .title {
+    font-size: 22px;
+    padding: 20px;
+  }
 
-#score {
-  top: 20px;
-  right: 20px;
-  width: fit-content;
-  height: 50px;
-  color: #d1d0c5;
-  font-size: 18px;
-  text-align: center;
+  #score {
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+  }
 }
-  
-} 
